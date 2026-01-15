@@ -20,7 +20,13 @@ public class Calculator {
             case '+' -> firstNum + secondNum;
             case '-' -> firstNum - secondNum;
             case '*' -> firstNum * secondNum;
-            case '/' -> firstNum / secondNum;
+            case '/' -> {
+                if (secondNum == 0) {
+                    System.out.println("Cannot divide by zero!");
+                    yield 0;
+                }
+                yield firstNum / secondNum;
+                }
             case '%' -> firstNum % secondNum;
             default -> {
                 System.out.println("Invalid operator!");
