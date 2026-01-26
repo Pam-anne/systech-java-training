@@ -2,11 +2,11 @@ package com.github.pamanne.exercises.javase009;
 
 public class Shape {
     protected String color;
-    protected boolean filled;
+    protected boolean isFilled;
 
-    public Shape(String color, boolean filled){
+    public Shape(String color, boolean isFilled){
         this.color =color;
-        filled = true;
+        isFilled = true;
 
     }
 
@@ -18,8 +18,8 @@ public class Shape {
         return 0;
     }
 
-    public String tostring(){
-        return color+"shape"+ "is filled = " + filled;
+    public String toString(){
+        return color+"shape"+ "is filled = " + isFilled;
     }
     
 

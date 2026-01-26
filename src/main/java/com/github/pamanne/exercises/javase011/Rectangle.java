@@ -1,4 +1,4 @@
-package com.github.pamanne.exercises.javase009;
+package com.github.pamanne.exercises.javase011;
 
 public class Rectangle extends Shape{
     private double width;
@@ -27,8 +27,5 @@ public class Rectangle extends Shape{
 
     }
 
-    @Override
-    public String toString(){
-        return color+" Rectangle is filled = " + isFilled;
-    }
+   
 }

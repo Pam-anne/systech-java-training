@@ -1,4 +1,4 @@
-package com.github.pamanne.exercises.javase009;
+package com.github.pamanne.exercises.javase011;
 
 public class Circle extends Shape {
     private double radius;
@@ -23,9 +23,6 @@ public class Circle extends Shape {
         return perimeter;
 
     }
-    @Override
-    public String toString(){
-        return color+" Circle is Filled = " + isFilled;
-    }
+   
   
 }
