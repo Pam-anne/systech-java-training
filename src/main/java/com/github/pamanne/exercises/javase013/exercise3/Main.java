@@ -11,17 +11,17 @@ public class Main {
         while (continueCalculation) {
             try {
                 System.out.print("Enter first number: ");
-                double num1 = scanner.nextDouble();
+                double firstNum = scanner.nextDouble();
                 scanner.nextLine();
 
                 System.out.print("Enter operator (+, -, *, /): ");
                 String operator = scanner.nextLine();
 
                 System.out.print("Enter second number: ");
-                double num2 = scanner.nextDouble();
+                double secondNum = scanner.nextDouble();
                 scanner.nextLine();
 
-                double result = Calculator.calculate(num1, num2, operator);
+                double result = Calculator.calculate(firstNum, secondNum, operator);
                 System.out.println("Result: " + result);
 
             } catch (InputMismatchException e) {

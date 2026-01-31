@@ -2,28 +2,28 @@ package com.github.pamanne.exercises.javase013.exercise3;
 
 public class Calculator {
 
-    public static double calculate(double num1, double num2, String operator) throws InvalidOperationException {
+    public static double calculate(double firstNum, double secondNum, String operator) throws InvalidOperationException {
 
         double result;
 
         switch (operator) {
             case "+":
-                result = num1 + num2;
+                result = firstNum + secondNum;
                 break;
 
             case "-":
-                result = num1 - num2;
+                result = firstNum - secondNum;
                 break;
 
             case "*":
-                result = num1 * num2;
+                result = firstNum * secondNum;
                 break;
 
             case "/":
-                if (num2 == 0){
+                if (secondNum == 0){
                     throw new ArithmeticException("Division by zero is not allowed.");
                 }
-                result = num1 / num2;
+                result = firstNum / secondNum;
                 break;
 
             default:
