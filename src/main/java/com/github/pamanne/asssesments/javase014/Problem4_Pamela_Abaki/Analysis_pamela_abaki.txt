@@ -1,0 +1,65 @@
+Problem 4: Code Analysis & Debugging (15 points)
+1. Encapsulation Violation
+
+public static String companyName;	
+Field is public, so any class can change it directly. It Should be private and accessed via getter/setter.
+    correct version:
+    private static String companyName ;
+      public static String getCompanyName() {
+        return companyName;
+    }
+
+
+Salary and employeeName attributes are private  but the class doesn’t provide getters, so you can’t read their values outside.
+corrected version:
+public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+2. Static misuse
+
+companyName attribute is static - means it belongs to the class, not individual employees,so it should be initializad to avoid null values.
+private static String companyName ="Company A";
+
+3.Constructor Problems
+Only sets name,there is no validation, salary is uninitialized.
+It should set salary to 0.0 for clarity
+ public EmployeeManagement(String name)throws InvalidEmployeeException{
+        if (name == null || name.trim().isEmpty()) {
+            throw new InvalidProductException("Name can not be empty");
+        }
+        employeeName = name;
+        this.salary = 0.0;
+    }
+
+4. Misuse of  return type
+public void calculateBonus() {
+    return salary * 0.1;
+}
+
+The method says void, which means it should not return anything.But it’s trying to return a value.
+
+The correct method should be:
+
+public double calculateBonus() {
+    return salary * 0.1;
+}
+
+5. Missing exception handling
+
+Instead of just printing "Salary cannot be negative", it should be handled by throwing an exception.
+
+Example:
+
+if (salary < 0) {
+    throw new InvalidSalaryException("Salary cannot be negative");
+}
+
+6.Logic error
+This line salary = salary doesn’t actually set anything,it’s setting the parameter salary to itself  not the class variable.
+
+The correct one should be:  this.salary = salary;

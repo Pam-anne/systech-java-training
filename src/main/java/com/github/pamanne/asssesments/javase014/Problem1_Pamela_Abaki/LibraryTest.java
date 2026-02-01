@@ -1,4 +1,17 @@
+/**
+ * Assessment 3: Mid-Term Practical Test
+ * Student: Pamela Akoth Abaki
+ * Date: 01-Feb-2026
+ * Problem: 1 - Library Management System
+ *
+ * Key Features:
+ * - Demonstrates inheritance and encapsulation
+ * - Polymorphic behavior through checkout and returnItem methods
+ * - Base class for Book, DVD, and Magazine
+ */
+
 package com.github.pamanne.asssesments.javase014.Problem1_Pamela_Abaki;
+
 
 public class LibraryTest {
     public static void main(String[] args) {

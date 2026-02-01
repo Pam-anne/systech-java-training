@@ -1,3 +1,15 @@
+/**
+ * Assessment 3: Mid-Term Practical Test
+ * Student: Pamela Akoth Abaki
+ * Date: 01-Feb-2026
+ * Problem: 3 - E-Commerce Product Management System
+ *
+ * Key Features:
+ * - Abstract class demonstrating abstraction and inheritance
+ * - Validates product data and handles exceptions
+ * - Provides methods for tax application, discount calculation, and stock management
+ */
+
 package com.github.pamanne.asssesments.javase014.Problem3_Pamela_Abaki;
 
 public class ECommerceTest {

@@ -1,3 +1,15 @@
+/**
+ * Assessment 3: Mid-Term Practical Test
+ * Student: Pamela Akoth Abaki
+ * Date: 01-Feb-2026
+ * Problem: 2 - Bank Transaction System
+ *
+ * Key Features:
+ * - Demonstrates encapsulation and method overloading
+ * - Implements custom exceptions: InsufficientFundsException, InvalidTransactionException, AccountNotFoundException,InvalidAccountException
+ * - Handles negative deposits, insufficient funds, and invalid transfers,invalid account details
+ */
+
 package com.github.pamanne.asssesments.javase014.Problem2_Pamela_Abaki;
 
 public class BankTest {
