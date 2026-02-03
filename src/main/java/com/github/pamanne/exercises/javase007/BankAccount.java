@@ -1,6 +1,5 @@
 package com.github.pamanne.exercises.javase007;
 
-import java.lang.reflect.Constructor;
 
 public class BankAccount {
     public String accountNumber;
