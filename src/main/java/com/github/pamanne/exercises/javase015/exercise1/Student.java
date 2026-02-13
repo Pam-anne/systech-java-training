@@ -23,6 +23,7 @@ public class Student {
         return grade;
     }
 
+    @Override
     public String toString() {
         return "Student{id=" + id + ", name='" + name + "', grade='" + grade + "'}";
     }

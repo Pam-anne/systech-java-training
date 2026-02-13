@@ -34,6 +34,7 @@ public class Task {
         this.completed = completed;
     }
 
+    @Override
     public String toString() {
         return "Task{ID=" + id + ", Description=" + description + ", Priority=" + priority + ", Completed=" + completed
                 + "}";
