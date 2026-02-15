@@ -1,4 +1,4 @@
-package com.github.pamanne.exercises.javase016;
+package com.github.pamanne.exercises.javase016.exercise1;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
