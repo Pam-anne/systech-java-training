@@ -40,7 +40,10 @@ public class WordCounter {
     System.out.println("Unique Words: " + linkedUniqueWordSet.size());
     System.out.println("Words:" + linkedUniqueWordSet);   
 
+    scanner.close();
      
     }
+
+
     
 }
