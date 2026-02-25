@@ -1,6 +1,6 @@
 package com.github.pamanne.exercises.javase017.exercise2;
 
-public class Product {
+public class Product implements Comparable<Product>{
     private String category;
     private double price;
     private String name;
@@ -24,19 +24,20 @@ public class Product {
     }
 
 
-    // @Override
-    // public int compareTo(Product other){
-    //     int categoryCompare=this.category.compareTo(other.category);
-    //     if(categoryCompare != 0){
-    //         return categoryCompare;
-    //     }elseif(priceCategory!=0){
+    @Override
+    public int compareTo(Product other){
+        int categoryCompare=this.category.compareTo(other.category);
+        int priceCompare=Double.compare(this.price,other.price);
+        if(categoryCompare != 0){
+            return categoryCompare;
+        }
+        if(priceCompare != 0){
+            return priceCompare;
+        }
+        return this.name.compareTo(other.name);
+        
 
-    //     }else{
-
-    //     return this.author.compareTo(other.author);
-    //     }
-
-    // }
+    }
 
     @Override
     public String toString(){
