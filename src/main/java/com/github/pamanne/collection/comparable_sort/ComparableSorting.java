@@ -1,4 +1,4 @@
-package com.github.pamanne.collection.sorting;
+package com.github.pamanne.collection.comparable_sort;
 
 import java.util.*;
 public class ComparableSorting {

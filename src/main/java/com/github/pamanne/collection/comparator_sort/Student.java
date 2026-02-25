@@ -1,7 +1,7 @@
-package com.github.pamanne.collection.sorting;
+package com.github.pamanne.collection.comparator_sort;
 
-public class Student implements Comparable<Student> {
-    private String name;
+public class Student {
+     private String name;
     private int age;
     private double gpa;
 
@@ -23,18 +23,7 @@ public class Student implements Comparable<Student> {
         return gpa;
     }
 
-    @Override
-    public int compareTo(Student s){
-        int nameCompare = this.name.compareTo(s.name);
-        if(nameCompare !=0){
-            return nameCompare;
-        }
-        // If names are equal, compare by age
-        return Integer.compare(this.age,s.age);
-
-    }
-
-    @Override
+     @Override
     public String toString(){
         return "Name: " + getName() +", Age: " +getAge()+", Gpa:"+getGpa();
     }
